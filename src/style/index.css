@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html{
+        overflow-x: hidden;
+    }
+}
+
+@layer utilities {
+
+    .nav__menu__hamburger {
+        @apply absolute bg-white text-MyNeutral-Blue font-semibold w-[90%] mt-[90px] flex justify-center text-center invisible max-sm:visible duration-300;
+    }
+
+    .clip-path {
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+}
